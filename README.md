@@ -31,23 +31,23 @@ This repository contains scripts to fetch and analyze the daily vesting of Filec
 ## Setup & Execution
 
 ### Install Required Packages
-\```bash
+
 pip install requests
-\```
+
 
 ### Fetch Filecoin Prices
-\```bash
+
 python prices.py
-\```
+
 
 ### Update API Key
 1. Open `supply.py` in your editor.
 2. Update it with your SpaceScope API key where indicated.
 
 ### Analyze Daily Vesting
-\```bash
+
 python supply.py
-\```
+
 
 ## Important Notes
 - Ensure you have the appropriate permissions to read/write to the CSV files and that they're not being accessed by another application at the same time.
