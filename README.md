@@ -2,6 +2,26 @@
 
 This repository contains scripts to fetch and analyze the daily vesting of Filecoin tokens for the Filecoin Foundation and Protocol Labs. It comprises two main scripts:
 
+### How "Daily FF/PL/Team Unlock" is Calculated
+
+1. **Potential Unlocked FIL**: Calculated by subtracting mined and burnt FIL from circulating FIL, giving an idea of how much FIL has been potentially unlocked.
+   
+2. **Daily FF/PL/Team Unlock**: Represents the difference in the total unlocked FIL for FF/PL/Team between two consecutive days. It indicates the amount of FIL that got unlocked on a particular day.
+
+3. **FIL Price**: This is fetched for each day to calculate the dollar value of the daily unlocked FIL.
+
+4. **FF/PL Daily Value**: Represents the dollar value of the "Daily FF/PL/Team Unlock". It's calculated by multiplying the "Daily FF/PL/Team Unlock" with the "FIL Price" for the day.
+
+### CSV Output Explained
+
+- **Stat Date**: The date for which the data is being reported.
+- **Circulating FIL**: The total amount of FIL tokens in circulation on that day.
+- **Mined FIL**: Amount of FIL mined up to that date.
+- **Burnt FIL**: Amount of FIL that has been burnt up to that date.
+- **Daily FF/PL/Team Unlock**: Amount of FIL tokens that were unlocked on that day for the Filecoin Foundation, Protocol Labs, and their team.
+- **FIL Price**: The price of FIL token in USD on that day.
+- **FF/PL Daily Value**: The total value in USD of the FIL tokens that were unlocked on that day for the Filecoin Foundation, Protocol Labs, and their team.
+  
 ## Scripts
 
 1. **`prices.py`** - Fetches daily Filecoin prices from CoinGecko.
